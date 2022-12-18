@@ -1,0 +1,13 @@
+Team Name :Wonder Hacks 
+Team Members:Ann Marria Thomas
+Aparna KJ
+Aryanandha Anil
+Farhana Parvin
+Team idea: Maternal guidence website
+ MITERA
+Description: 
+ It's a meternal guidence website for all mothers to be.Its provide facilities like consultation of doctors, according to their preferences (date and time). personal guidence for exercises.Explains about myths and how to avoid all.complete guidence about normal delivery,syserian ,and IVF methods.
+First login and enter all necessary medical details about patient.
+Reviews of mothers and postpartum they overcomed.It is very helpful.
+STACKS USED:FRONTEND: HTML,CSS
+            BACKEND: JAVASCRIPT 
