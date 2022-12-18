@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>FITEX</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!--body-->
+
+<body class="main-layout inner_page">
+   <!--loader-->
+   <div class="loader_bg">
+   <div class="loader"><img src="images/loading.gif" alt="#"></div>
+ </div>
+   <!--end of the loader-->
+ 
+   <div class="full_bg">
+     <!--header-->
+     <header class="header-area">
+       <div class="container-fluid">
+         <div class="row d_flex">
+           <div class="col-md-3 col-sm-3">
+             <div class="logo">
+               <a href="index.html"></a>
+             </div>
+           </div>
+           <div class="col-md-7 col-sm-9">
+             <div class="navbar-area">
+               <nav class="site-navbar">
+                 <ul>
+                   <li><a href="index.html" class="active">HOME</a></li>
+                   <li><a href="about.html">LOGIN</a></li>
+                   <li><a href="testimonials.html">FACTS</a></li>
+                   <li><a href="contact.html">QUERIES</a></li>
+                 </ul>
+                 <button class="nav-toggler">
+                   <span></span>
+                 </button>
+               </nav>
+               </div>
+             </div>
+           
+           </div>
+         </div>
+       </header>
+     <!--end of header-->
+     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {text-align: center;}
+        #enterlogin {float: left; width: 100%;  background-color: rgb(243, 206, 176); color: floralwhite;}
+        input {width: 280px;}
+    </style>
+</head>
+<body>
+    <div id="login">
+      <p style="text-align:center;"><font size="+5">LOGIN</font></p>
+      <br></br>
+        <h1>E-MAIL ID</h1><li></li>
+        <input id="enterID" type="text"> 
+        <br></br>
+        <h1>PASSWORD</h1><li></li>
+        <input id="enterAge" type="text"> <br><br>
+        <li><a href="services.html"><font size="+2">LOGIN</font><br><br>
+        <li><a href="signup.html">NOT AN USER ALREADY? SIGN UP
+        </a></li>
+    </div>
+    
+    
+
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCc_FQXdNmJhjFoG9ta9wzu_JHHT_wJrv4",
+    authDomain: "authentication-8ef83.firebaseapp.com",
+    databaseURL: "https://authentication-8ef83-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "authentication-8ef83",
+    storageBucket: "authentication-8ef83.appspot.com",
+    messagingSenderId: "295304627632",
+    appId: "1:295304627632:web:34a0725f4f5e76ae56c275"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+         
+   
+
+        import {getDatabase, ref, get, set, child, update, remove}
+        from  "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";//Copy and Paste the URL from near the top of the CDN you pasted in from firebase
+        // (the one where you imported "initializeApp" from),
+        //but change "firebase-app" to "firebase-database"
+        
+
+        const db = getDatabase();
+
+        var enterID = document.querySelector("#enterID");
+        var enterName = document.querySelector("#enterName");
+        var enterAge = document.querySelector("#enterAge");
+        var findID = document.querySelector("#findID");
+        var findName = document.querySelector("#findName");
+        var findAge = document.querySelector("#findAge");
+      
+
+        var insertBtn = document.querySelector("#insert");
+        var updateBtn = document.querySelector("#update");
+        var removeBtn = document.querySelector("#remove");
+        var findBtn = document.querySelector("#find");
+
+         
+        function FindData() {
+            const dbref = ref(db);
+
+            get(child(dbref, "People/" + findID.value))
+            .then((snapshot)=>{
+                if(snapshot.exists()){
+                    alert("Logged in successfully");
+                } else {
+                    alert("No data found");
+                }
+            })
+            .catch((error)=>{
+                alert(error)
+            })
+            
+        }
+
+
+        removeBtn.addEventListener('click', RemoveData);
+        findBtn.addEventListener('click', FindData);
+
+      </script>
+       <!--footer-->
+  ,<footer>
+   <div class="footer">
+     <div class="copyright">
+       <div class="container">
+         <div class="row d_flex">
+           <div class="col-md-8">
+             <p>&copy;2022 All rights Reserved. Designed By <a href="#">Wonder Hacks</a></p>
+           </div>
+           <div class="col-md-4"></div>
+           <ul class="social_icon text_align_center">
+             <li><a href="javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
+             <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="javascript:void(0)"><i class="fa fa-linkedin-square"></i></a></li>
+             <li><a href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+           </ul>
+         </div>
+       </div>
+    </div>
+   </div>
+   </footer>
+   <!--end of footer-->
+</body>
+</html>
+
+
+<!-- Javascript files-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+</html>
